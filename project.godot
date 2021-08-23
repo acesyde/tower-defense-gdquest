@@ -1,0 +1,51 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+_global_script_classes=[ {
+"base": "Area2D",
+"class": "HitBoxArea2D",
+"language": "GDScript",
+"path": "res://Objects/HitBox/HitBoxArea2D.gd"
+}, {
+"base": "Area2D",
+"class": "HurtBoxArea2D",
+"language": "GDScript",
+"path": "res://Objects/HurtBox/HurtBoxArea2D.gd"
+}, {
+"base": "Node2D",
+"class": "Weapon2D",
+"language": "GDScript",
+"path": "res://Objects/Weapon2D/Weapon2D.gd"
+} ]
+_global_script_class_icons={
+"HitBoxArea2D": "",
+"HurtBoxArea2D": "",
+"Weapon2D": ""
+}
+
+[application]
+
+config/name="tower-defense-gdquest"
+run/main_scene="res://HitSystemTest.tscn"
+config/icon="res://icon.png"
+
+[layer_names]
+
+2d_physics/layer_1="selection"
+2d_physics/layer_2="combat"
+2d_physics/layer_3="enemies"
+
+[physics]
+
+common/enable_pause_aware_picking=true
+
+[rendering]
+
+environment/default_environment="res://default_env.tres"
