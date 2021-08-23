@@ -9,6 +9,11 @@
 config_version=4
 
 _global_script_classes=[ {
+"base": "Node2D",
+"class": "Bullet",
+"language": "GDScript",
+"path": "res://Objects/Weapon2D/Bullets/Bullet.gd"
+}, {
 "base": "Area2D",
 "class": "HitBoxArea2D",
 "language": "GDScript",
@@ -25,6 +30,7 @@ _global_script_classes=[ {
 "path": "res://Objects/Weapon2D/Weapon2D.gd"
 } ]
 _global_script_class_icons={
+"Bullet": "",
 "HitBoxArea2D": "",
 "HurtBoxArea2D": "",
 "Weapon2D": ""
