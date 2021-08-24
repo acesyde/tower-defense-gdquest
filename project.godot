@@ -24,6 +24,11 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://Objects/HurtBox/HurtBoxArea2D.gd"
 }, {
+"base": "Sprite",
+"class": "RangePreview",
+"language": "GDScript",
+"path": "res://Objects/RangePreview/RangePreview.gd"
+}, {
 "base": "Node2D",
 "class": "Weapon2D",
 "language": "GDScript",
@@ -33,6 +38,7 @@ _global_script_class_icons={
 "Bullet": "",
 "HitBoxArea2D": "",
 "HurtBoxArea2D": "",
+"RangePreview": "",
 "Weapon2D": ""
 }
 
